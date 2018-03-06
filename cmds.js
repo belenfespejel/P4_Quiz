@@ -114,10 +114,10 @@ exports.testCmd = (rl, id) => {
 				let resp = answer.toLowerCase().trim();
 				let respSist = quiz.answer.toLowerCase().trim();
 				if (respSist === resp) {
-					log(` Su respuesta es: `);
+					log(` Su respuesta es correcta. `);
 					biglog('Correcta', 'green');
 				} else {
-					log(` Su respuesta es: `);
+					log(` Su respuesta es incorrecta. `);
 					biglog('Incorrecta', 'red');
 				}
 					
@@ -254,7 +254,6 @@ exports.editCmd = (rl, id) => {
 
 exports.creditsCmd = rl => {
     log('Autores de la práctica:');
-    log('Nombre 1', 'green');
-    log('Nombre 2', 'green');
+    log('BELEN');
     rl.prompt();
 };
